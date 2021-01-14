@@ -10,8 +10,7 @@ namespace webRequest
         {
             var httpClient = new HttpClient();
             
-            //var url = "http://localhost:51614/Home/ItWorks";
-            var url = "http://localhost:51614/home/test3";
+            var url = "http://172.29.213.9:32000/home/test3";
             HttpResponseMessage httpResponseMessage = await httpClient.GetAsync(url);
 
             if(httpResponseMessage.StatusCode == System.Net.HttpStatusCode.OK) 
